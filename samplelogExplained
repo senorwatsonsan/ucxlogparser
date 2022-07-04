@@ -1,0 +1,45 @@
+Phones:
+    xt.202
+    SIP protocol
+    Yealink T23G
+
+    xt.204
+    XSTIM protocol
+    Infinity 5010
+
+Trunk:
+    SIP Trunk to PSTN
+
+Call Activity Explained:
+
+202 --> 918004444444 (MCI Caller ID readback)
+
+204 --> 202  (while 202 is still on external call)
+    no answer
+    Leave VM
+
+204 --> misdial (303) 499-711
+
+204 --> (303) 499-7111 (date time service in colorado) 
+
+202 --> *97
+    VM login
+    listen to message
+    Mailbox setup - name rec and pw change
+    delete message
+
+202 --> 204
+    call and answer
+    202 hangup
+    204 hangup
+
+204 --> 202 
+    call and answer
+    204 hangup 
+    202 hangup
+
+204 attempts international
+    blocked at outbound route
+
+204 attempts international to US Consulate Hong Kong
+    blocked by SIP trunk provider-level policy (503 service unavailable)
