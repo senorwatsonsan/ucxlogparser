@@ -1,7 +1,7 @@
 #!/usr/bin/evn python3
 
 '''
-ucxlogminer
+ucxlogparser
 
 Using a Source or Destination channel from CDR records, determine the unique call identifier, extract all log lines related to that phone call, and add some coloring.
 
