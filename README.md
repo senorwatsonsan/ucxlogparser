@@ -5,4 +5,4 @@ Using a Source or Destination channel from CDR records, determine the unique cal
 
 usage: $python3 ~/ucxlogparser.py <channel id to search for> </path/to/asterisk/fulllog>
 
-example usage: $python3 ~/ucxlogparser.py UCX/204@204-00000000 ~/Documents/clients/AcmeFireworks/full
+example usage: $python3 ~/ucxlogparser.py UCX/204@204-00000000 ~/downloads/logs/full
