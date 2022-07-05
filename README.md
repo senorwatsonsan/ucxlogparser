@@ -10,6 +10,5 @@ Using a Source or Destination channel from CDR records, determine the unique cal
 > $python3 ~/ucxlogparser.py UCX/204@204-00000000 ~/downloads/logs/full
 
 
-Note: If piping into less, use - R
-As in: 
+Note: If piping into less, use "-R" as in: 
 > $python3 ~/ucxlogparser.py UCX/204@204-00000000 ~/downloads/logs/full | less -R
