@@ -131,11 +131,11 @@ with open(logfile, 'rt') as file:
         print("No matches found.")
         sys.exit()
 
-#
+#save call serial number belonging to queried channel
 m = re.search(s, linematch)
 C = m.group('callsntr')
 
-#determine which type of log line signature matches, and add appropriate coloring. 
+#determine log line type, and add appropriate coloring. 
 with open(logfile, 'rt') as file:
     for line in file:
         lspr = re.match(lsprc, line)
